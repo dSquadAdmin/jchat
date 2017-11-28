@@ -1,0 +1,27 @@
+<div class="title">
+    jChat
+</div>
+
+<ion-card>
+    <ion-card-content>
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="email" [(ngModel)]="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" [(ngModel)]="password"></ion-input>
+            </ion-item>
+            <ion-item>
+                <button ion-button block large (click)="logIn()">Log In</button>
+            </ion-item>
+            OR
+            <ion-item>
+                <button ion-button block color="danger" (click)="registerGoogle()">Log In with Google</button>
+            </ion-item>
+        </ion-list>
+    </ion-card-content>
+</ion-card>

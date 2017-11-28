@@ -1,0 +1,24 @@
+<ion-menu [content]="content">
+
+    <ion-content>
+        <ion-card *ngIf="user">
+            <img src="{{user.photoURL}}" height="50%" width="50%" />
+            <ion-card-content>
+                <ion-card-title>
+                    {{user.displayName}}
+                </ion-card-title>
+                <p>
+                    {{user.email}}
+                </p>
+            </ion-card-content>
+        </ion-card>
+        <ion-list>
+            <button color="black" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+            {{p.title}}
+          </button>
+            <button ion-item block (click)="logOut()">Sign Out</button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

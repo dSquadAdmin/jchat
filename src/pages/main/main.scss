@@ -1,0 +1,15 @@
+page-main {
+    ion-content {
+        padding-bottom: 20em;
+        ion-list {
+            ion-item {
+                position: relative;
+                display: block;
+            }
+        }
+    }
+    ion-footer {
+        position: fixed;
+        display: block;
+    }
+}
