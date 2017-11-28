@@ -17,12 +17,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import {ElasticModule } from 'ng-elastic';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDhKNIt43G22rnt78cwtfjfG4917Mv0C_g",
-  authDomain: "keshav-2bd0c.firebaseapp.com",
-  databaseURL: "https://keshav-2bd0c.firebaseio.com",
-  projectId: "keshav-2bd0c",
-  storageBucket: "keshav-2bd0c.appspot.com",
-  messagingSenderId: "909789272472"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 }
 
 @NgModule({
